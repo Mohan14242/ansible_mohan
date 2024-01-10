@@ -1,0 +1,7 @@
+- name: installing the packages in the server
+  hosts: localhost
+  tasks:
+  - name: installing the packages 
+    ansible.butiltin.yum:
+      name: nginx
+      state: installed
